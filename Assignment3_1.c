@@ -14,10 +14,7 @@ void PrintEven(int iNo)
 
     for ( iCnt = 1; iCnt <= iNo; iCnt++)
     {
-        if((iCnt % 2) == 0)
-        {
-            printf("%d\t",iCnt);
-        }
+        printf("%d\t",iCnt * 2);
     }
 }
 int main()
