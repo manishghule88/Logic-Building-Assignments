@@ -1,10 +1,10 @@
 // 1. Accept number of rows and number columns from user and display below pattern.
 // Input : iRow = 4     iCol = 4
 // Output:
-//      *
-//      *   *
-//      *   *   *
-//      *   *   *   *
+//      1   2   3   4
+//          2   3   4
+//              3   4   
+//                  4   
 
 #include <stdio.h>
 
@@ -16,9 +16,9 @@ void Pattern(int iRow, int iCol)
     {
         for(j = 1; j <= iCol; j++)
         {
-            if((i > j) || (i == j))
+            if((i == j) || (i < j))
             {
-                printf("*\t");
+                printf("%d\t",j);
             }
             else
             {
